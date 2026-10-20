@@ -1,58 +1,32 @@
-# E-Commerce Business Intelligence & Customer Analytics Dashboard
+# E-Commerce Business Intelligence & Customer Analytics
+
+> End-to-end Power BI project analyzing ~99K orders and ~96K customers across sales, customer behavior, products, delivery operations, payments, reviews, and order risk.
 
 ## Project Overview
 
-Developed an end-to-end E-Commerce Business Intelligence solution using Power BI to analyze sales, customers, products, customer satisfaction, delivery operations, payments, and order risk using the Olist Brazilian E-Commerce dataset.
+This project uses the **Olist Brazilian E-Commerce dataset** to build a multi-page Power BI solution for management-level analysis. Raw relational data was cleaned and transformed with Power Query, modeled for reporting, and analyzed using DAX measures and interactive visualizations.
 
-The project analyzes approximately 99K orders and 96K customers and converts raw transactional data into interactive dashboards and actionable business insights.
+### Skills Demonstrated
 
-## Business Problems Addressed
+`Power BI` · `Power Query` · `DAX` · `Data Modeling` · `Star Schema` · `KPI Design` · `Data Visualization` · `Business Intelligence`
 
-- How is overall sales performance changing over time?
-- Which product categories generate the highest sales?
-- Which states contribute the most revenue?
-- What is the customer retention level?
+## Executive Dashboard
+
+![Executive Overview](executive_overview.jpeg)
+
+## Business Questions
+
+- How are sales and order volumes changing over time?
+- Which categories and regions generate the most sales?
+- What is the repeat-customer rate?
 - How satisfied are customers?
-- How efficient is the delivery process?
-- Where are cancellation rates higher?
-- What payment methods are most widely used?
-- Which business areas require management attention?
+- How efficient is delivery performance?
+- Where are cancellations and payment risks concentrated?
+- Which areas deserve management attention?
 
-## Tools & Technologies
+## KPI Snapshot
 
-- Power BI
-- Power Query
-- DAX
-- Data Modeling
-- Star Schema
-- Data Visualization
-
-## Data Preparation
-
-Used Power Query to:
-- Clean and transform source datasets
-- Standardize column names and data types
-- Handle duplicate records
-- Prepare date fields
-- Merge product-category translation data
-- Prepare datasets for relational analysis
-
-## Data Model
-
-Built a relational data model using:
-- Customer Dimension
-- Date Dimension
-- Orders
-- Order Items
-- Products
-- Payments
-- Reviews
-
-Created one-to-many relationships to support dynamic filtering and analysis.
-
-## Key KPIs
-
-| KPI | Value |
+| KPI | Result |
 |---|---:|
 | Total Sales | 13.59M |
 | Total Orders | 99K |
@@ -60,55 +34,75 @@ Created one-to-many relationships to support dynamic filtering and analysis.
 | Average Order Value | 136.68 |
 | Repeat Customer Rate | 3.1% |
 | Average Review Score | 4.09 / 5 |
-| Average Delivery Time | 12.5 Days |
+| Average Delivery Time | 12.5 days |
 | On-Time Delivery | 92% |
 | Late Delivery | 8% |
 | Cancelled Orders | 625 |
 | Cancellation Rate | 0.6% |
 | Total Payment Value | 16.01M |
 
-## Dashboard Sections
+## Data Preparation & Modeling
+
+Using **Power Query**, I cleaned and transformed the source tables, standardized fields and data types, handled duplicate records, prepared date fields, and merged product-category translation data.
+
+The reporting model connects customer, date, order, order-item, product, payment, and review data using one-to-many relationships to support cross-filtering and KPI analysis.
+
+## Dashboard Pages
 
 ### 1. Executive Overview
-Provides a high-level view of sales, orders, customers, AOV and delivery performance.
+High-level view of sales, orders, customers, AOV, and delivery performance.
+
+![Executive Overview](executive_overview.jpeg)
 
 ### 2. Sales & Customer Intelligence
-Analyzes sales trends, regional revenue, customer distribution and repeat purchasing behavior.
+Sales trends, regional revenue, customer distribution, and repeat-purchase behavior.
 
-### 3. Revenue & Order Analysis
-Analyzes revenue trends, order volume, average item price, freight burden and regional performance.
+![Sales and Customer Intelligence](s&c_intellience.jpeg)
 
-### 4. Product Performance
-Identifies top-selling categories and products and compares sales, item volume, value and customer satisfaction.
+### 3. Product Performance
+Category/product performance across sales, item volume, value, and customer satisfaction.
 
-### 5. Customer Experience
-Analyzes customer ratings and delivery performance to understand service quality.
+![Product Performance](pro_performance.jpeg)
 
-### 6. Delivery & Operations
-Monitors delivery time, late deliveries, on-time performance and order status.
+### 4. Customer Performance
+Customer behavior and experience metrics used to identify retention opportunities.
 
-### 7. Business Insights & Recommendations
-Converts analytical findings into business actions related to retention, product performance, delivery and cancellations.
+![Customer Performance](cust_performence.jpeg)
 
-### 8. Order & Payment Risk
-Analyzes payment behavior, cancellations and regional order risk.
+### 5. Business Insights & Recommendations
+Management-oriented findings and recommended actions.
 
-## Key Business Insights
+![Business Insights and Recommendations](bi&rec.jpeg)
 
-- Repeat customer rate is 3.1%, highlighting a significant customer-retention opportunity.
-- 92% of orders were delivered on time, while 8% experienced late delivery.
-- 625 orders were cancelled, representing a 0.6% cancellation rate.
-- Average customer review score is 4.09/5, indicating generally positive customer feedback.
+### 6. Order & Payment Risk
+Payment behavior, cancellations, and regional order-risk analysis.
+
+![Order and Payment Risk](order&payrisk.jpeg)
+
+## Key Insights
+
+- The repeat-customer rate is **3.1%**, indicating a meaningful retention opportunity.
+- **92%** of orders were delivered on time; **8%** were late.
+- **625** orders were cancelled, a **0.6%** cancellation rate.
+- Average review score is **4.09/5**, showing generally positive customer feedback.
 - `beleza_saude` was the highest-selling product category in the analysis.
 
 ## Recommendations
 
-- Develop loyalty and repeat-purchase campaigns.
+- Build loyalty and repeat-purchase campaigns to improve retention.
 - Investigate regions with higher delivery delays.
-- Protect and scale high-performing product categories.
+- Protect and scale high-performing categories.
 - Monitor cancellation hotspots by region and time.
-- Continue monitoring customer feedback and service quality.
+- Track customer feedback alongside operational KPIs.
 
 ## Project Outcome
 
-The dashboard transforms multi-table e-commerce transaction data into an interactive business intelligence solution that enables users to monitor performance, identify operational risks, understand customer behavior, and make data-driven decisions.
+The project demonstrates an end-to-end BI workflow:
+
+**Raw relational data → Power Query transformation → Data model → DAX KPIs → Interactive dashboards → Business recommendations**
+
+It is designed to show not only Power BI visualization skills, but also the ability to structure analysis around real business questions and communicate findings clearly.
+
+---
+**Author:** Bindu Burla  
+**Focus:** Data Analytics · Power BI · Business Intelligence
